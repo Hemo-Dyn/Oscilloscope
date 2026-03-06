@@ -1,6 +1,7 @@
 ### Hello :<
 
 APPLE ONLY CURRENTLY!!!!
+
 Basic CLI music visualizer with original songs included. You can add song files in the song_data file for visualization.
 
 ![Photo of app usage](Imgs/osc.png)
