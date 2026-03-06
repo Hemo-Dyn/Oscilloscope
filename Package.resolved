@@ -1,0 +1,15 @@
+{
+  "originHash" : "023f67d433776f0013cd2c0d6c603b010e99f07c4de9fa553430cd9793b0da8a",
+  "pins" : [
+    {
+      "identity" : "example-package-figlet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/example-package-figlet.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "166eef46de0b094d6d1966e749f727d6c4beba0e"
+      }
+    }
+  ],
+  "version" : 3
+}
