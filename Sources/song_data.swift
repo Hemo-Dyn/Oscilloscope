@@ -4,29 +4,35 @@ final class Song: Sendable {
     let title: String
     let path: String
     let lyrics: String
+    let date: Date?
 
     init(title: String, path: String, lyrics: String) {
         self.title = title
         self.path = path
         self.lyrics = lyrics
+
+        let file = URL(fileURLWithPath: self.path)
+        self.date = try? file.resourceValues(forKeys: [.creationDateKey]).creationDate
     }
 }
 
 struct Library {
+
     static let working: Song = Song(
         title: "hardly working at all",
         path:
             "./Songs/hardly working at all.wav",
         lyrics: """
 
-            In thirty short seconds         /
-            forgot where your heart aligns  /
-            hope you can't stand            /
-            to look right at your damn self /
-            stop making excuses             /
-            stop telling your stupid lies   /
-            were you hard at work           /
-            or hardly working at all        ?
+                In thirty short seconds         /
+                forgot where your heart aligns  /
+                hope you can't stand            /
+                to look right at your damn self /
+                stop making excuses             /
+                stop telling your stupid lies   /
+                were you hard at work           /
+                or hardly working at all        ?
+                
             """)
 
     static let blood: Song = Song(
@@ -116,5 +122,19 @@ struct Library {
                                                             
                                                             /   I wanna feel like I'm a person      /
                                                             /   too                                 .
+            """)
+
+    static let spare: Song = Song(
+        title: "spare",
+        path: "/Users/carlosgiron/Library/Mobile Documents/com~apple~CloudDocs/snippets/spare.wav",
+        lyrics: """
+
+                    didnt want no surprise                      /
+                    i wish you were never here                  /
+                    stay around just to die                     /
+                    i guess i’ll play it by ear                 /
+
+                    and you never wanted to be mine             /
+                    leave me here and please just spare my mind /
             """)
 }

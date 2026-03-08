@@ -11,6 +11,7 @@ let options: [Int: Song] = [
     2: Library.blood,
     3: Library.brady,
     4: Library.fuji,
+    5: Library.spare,
 ]
 
 print(phosphorGreen)
@@ -19,7 +20,6 @@ print("Song options:")
 for (key, option) in options.sorted(by: { $0.key < $1.key }) {
     print("\(key):\t\(option.title)")
 }
-print()
 
 if let selection: String = readLine() {
     choice = options[Int(selection) ?? 1]
