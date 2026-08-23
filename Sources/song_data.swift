@@ -140,6 +140,13 @@ struct Library {
                         and you never wanted to be mine             /
                         leave me here and please just spare my mind /
                 """),
+        
+        Song(
+            title: "eyes",
+            path:
+            "Songs/eyes (better v2).wav",
+            lyrics: "hello hello hello"
+        ),
     ]
 
     static func sorted() -> [Song] {
