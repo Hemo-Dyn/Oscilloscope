@@ -129,7 +129,7 @@ struct Library {
         Song(
             title: "spare",
             path:
-                "/Users/carlosgiron/Library/Mobile Documents/com~apple~CloudDocs/snippets/spare.wav",
+                "Songs/spare (sped).wav",
             lyrics: """
 
                         didnt want no surprise                      /
